@@ -1,3 +1,55 @@
 body {
     font-family: sans-serif;
 }
+
+main {
+    margin-top: 50px;
+}
+
+section.loginbox {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 30vh;
+}
+
+section.loginbox input {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    padding: 3%;
+}
+
+div.menubar {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: darkslategrey;
+    color: aliceblue;
+}
+
+div.menubar .mb_element {
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 30px;
+    padding: 4px 10px 4px 4px;
+    color: inherit;
+    text-decoration: none;
+}
+
+div.menubar div.usertool {
+    float: right;
+}
+
+div.menubar div.usertool a {
+    display: block;
+    line-height: inherit;
+    color: inherit;
+    text-decoration: inherit;
+}

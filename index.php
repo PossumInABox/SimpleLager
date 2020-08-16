@@ -33,13 +33,14 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
 <body>
 
-<h1>Lager</h1>
-
-<form action="" method="post">
-    <input type="text" name="username">
-    <input type="password" name="password">
-    <input type="submit" value="Login">
-</form>
+<section class="loginbox">
+    <h1>Lager</h1>
+    <form action="" method="post">
+        <input type="text" name="username" placeholder="username">
+        <input type="password" name="password" placeholder="password">
+        <input type="submit" value="Login">
+    </form>
+</section>
 
 </body>
 

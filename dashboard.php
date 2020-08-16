@@ -11,17 +11,28 @@ if (!(isset($_SESSION['user']))) {
 
 <html>
 <head>
-    <title>Lager: Main</title>
+    <title>Lager: Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<h1>Willkommen</h1>
-<p>
-    <?php
-    var_dump($_SESSION);
-    ?>
-</p>
 
-<a href="logout.php">Logout</a>
+<div class="menubar">
+    <span class="mb_element">Dashboard</span>
+    <div class="mb_element usertool">
+        <a href="logout.php">Logout</a>
+    </div>
+
+</div>
+
+<main>
+
+    <h1>Willkommen</h1>
+    <p>
+
+    </p>
+
+</main>
+
 </body>
 </html>
