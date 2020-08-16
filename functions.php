@@ -9,4 +9,14 @@ function check_password($username, $password) {
     }
 }
 
+function login($username) {
+
+    $_SESSION['user'] = [
+        "name" => $username,
+        "loggedin" => true,
+        "role" => "root"
+    ];
+
+}
+
 ?>

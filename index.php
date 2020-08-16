@@ -1,14 +1,23 @@
 <?php
-
+session_start();
 include_once('functions.php');
+
+if (isset($_SESSION['user'])) {
+    header('Location: ./dashboard.php');
+    exit();
+}
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
     if (check_password($_POST['username'], $_POST['password'])) {
 
         // login successful, start session
+        login($_POST['username']);
         header('Location: ./dashboard.php');
+        exit();
 
     }
+} else {
+    session_destroy();
 }
 
 ?>
