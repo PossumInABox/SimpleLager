@@ -8,14 +8,17 @@ if (isset($_SESSION['user'])) {
 }
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
+
     if (check_password($_POST['username'], $_POST['password'])) {
 
         // login successful, start session
         login($_POST['username']);
         header('Location: ./dashboard.php');
         exit();
-
+    } else {
+        echo '<span style="color:red">Wrong username/password</span>';
     }
+
 } else {
     session_destroy();
 }
